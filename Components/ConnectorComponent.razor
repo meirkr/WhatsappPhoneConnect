@@ -1,0 +1,45 @@
+﻿@using WhatsappPhoneConnect.Models
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
+<div rtl="true">
+    <h1>חיבור בקליק לכל מספר!</h1>
+    <h2>הקש את המספר כולל מזהה מדינה. לדוגמה:</h2>
+</div>
+<h3>972501234567</h3>
+
+
+
+<EditForm Model="@_connectorModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText class="btn btn-primary" id="PhoneNumber" @bind-Value="_connectorModel.PhoneNumber" />
+
+    <button class="btn btn-primary" type="submit">פתח </button>
+
+</EditForm>
+
+
+@code {
+    private readonly ConnectorModel _connectorModel = new ConnectorModel();
+
+    public async void HandleValidSubmit()
+    {
+        var baseUrl = "https://api.whatsapp.com/send?phone=";
+        var fullUrl = baseUrl + this._connectorModel.PhoneNumber;
+        Console.WriteLine("opening: " + fullUrl);
+        await NavigateToUrlAsync(fullUrl, false);
+    }
+
+    public async Task NavigateToUrlAsync(string url, bool openInNewTab)
+    {
+        if (openInNewTab)
+        {
+            await JsRuntime.InvokeAsync<object>("open", new[] { url, "_blank" });
+        }
+        else
+        {
+            NavigationManager.NavigateTo(url);
+        }
+    }
+}
