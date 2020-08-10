@@ -28,7 +28,7 @@
         var baseUrl = "https://api.whatsapp.com/send?phone=";
         var fullUrl = baseUrl + this._connectorModel.PhoneNumber;
         Console.WriteLine("opening: " + fullUrl);
-        await NavigateToUrlAsync(fullUrl, false);
+        await NavigateToUrlAsync(fullUrl, true);
     }
 
     public async Task NavigateToUrlAsync(string url, bool openInNewTab)
