@@ -1,0 +1,45 @@
+{
+  "cacheBootResources": true,
+  "config": [ ],
+  "debugBuild": false,
+  "entryAssembly": "WhatsappPhoneConnect",
+  "linkerEnabled": true,
+  "resources": {
+    "assembly": {
+      "Microsoft.AspNetCore.Components.dll": "sha256-z4sOtEUOaY61+u+y5g+z14Z\/ANarEnKMVctGI8qTuKg=",
+      "Microsoft.AspNetCore.Components.Forms.dll": "sha256-Swij5Bm+YSGrW7TCvL4lbeShMAXuuAXh26wG9aJOt+M=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-Z4cs5EcaEM32Hhj7eSNcpLB5nntIyRMgF\/aCqbsABRI=",
+      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-RxLKxf6Mqhnc+S00IwWscBYn79S8hPvQ5cz1VJhwuak=",
+      "Microsoft.Bcl.AsyncInterfaces.dll": "sha256-jzHgXWAvWMkKIGFjZoT84tbe72E+H7CvTr\/Dryh4QPs=",
+      "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-11WVPDPVDifvEivKIJKF\/GNpaBmQapvSDzoCMe0DYxg=",
+      "Microsoft.Extensions.Configuration.dll": "sha256-gcS+5Dgud23JtgAOjzwzblfEuyuxBBfZO4rrNyU2NJs=",
+      "Microsoft.Extensions.Configuration.Json.dll": "sha256-02wwv1P8Q4T5\/2TKQ\/0o1eCNDbirwPJDOJ39MvLMLGg=",
+      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-W55fv2+Xp5Btz7p\/iqRndyWWO5xmv5M3zetNYVRymsY=",
+      "Microsoft.Extensions.DependencyInjection.dll": "sha256-pYBHVReVxmuQNUz5TvqPGAye2RrxZlhUR8z9WZKusNc=",
+      "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-QHdCQDec05nIc3cJ1tCj9qKE43bvMk\/a0pZQ7UnP4TI=",
+      "Microsoft.Extensions.Logging.dll": "sha256-DxRBmA40dhGrxazjoww4mQJDlcl7dX+46antC1IyCOA=",
+      "Microsoft.Extensions.Options.dll": "sha256-KyFnn0pUbTz6V2K6Tzqk2ndi+RsjS96tdR9EYrUBtyQ=",
+      "Microsoft.Extensions.Primitives.dll": "sha256-6\/FGEzkUpzRUN8eiuU0Y24SQHWiIzc+PbOpSOMSOsvg=",
+      "Microsoft.JSInterop.dll": "sha256-3cbvJEo8k8VJVQwyEZWWQ6yGRFQW8\/219DaOnmsX3e4=",
+      "Microsoft.JSInterop.WebAssembly.dll": "sha256-zV\/OfJNfNsG404X30Pwkdymdh1KmZpTVEmG\/JNFVc\/k=",
+      "mscorlib.dll": "sha256-KhT4+65pJ154A70Fsi9u+QSmyzN4Jjr+bmkTtcjjR1U=",
+      "System.ComponentModel.DataAnnotations.dll": "sha256-Xxgzo0YPv7hSKGslUexc1nGUmyN4hzTIYEVQrh0X+Lw=",
+      "System.Core.dll": "sha256-OSm6nv7T+XptW6hmlnRByXny8nHSOPXRBxXTxBy8q8w=",
+      "System.dll": "sha256-\/kjvAnM6dcvs2P5P3F8Y0mRoM5VqTiq4HAhczqvuZhc=",
+      "System.Net.Http.dll": "sha256-8s4RWf9O7mnBEsYGPBm+GgVvjsOyzrJ5Q7iBWo4mefI=",
+      "System.Net.Http.WebAssemblyHttpHandler.dll": "sha256-5uTweEh7qT+B+okJlFBVrzq7jn1bCnR6Y8dzzP9JoJw=",
+      "System.Runtime.CompilerServices.Unsafe.dll": "sha256-Cf+b5TzGclRIRU32BEGiEA11Gsl7u4\/vcR4+oN3XQsQ=",
+      "System.Text.Encodings.Web.dll": "sha256-vUW9Eer7rrVPrZYay2djufY598XEumwagPbxGURYxq4=",
+      "System.Text.Json.dll": "sha256-NBsKr5wOXNk1Fgxpx1JyTRuVz9afIKXrHHYugaem2mQ=",
+      "WebAssembly.Bindings.dll": "sha256-WZzkfD8cKbX94YDdIgOeo43V1zweF5AM9UgP0IJnQUM=",
+      "WhatsappPhoneConnect.dll": "sha256-m3Qo9\/fkPNBU4r+QX20NLmOrWs1EodZbiSuVPphjv\/I="
+    },
+    "pdb": null,
+    "runtime": {
+      "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
+      "dotnet.timezones.dat": "sha256-3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=",
+      "dotnet.wasm": "sha256-UC\/3Rm1NkdNdlIrzYARo+dO\/HDlS5mhPxo0IQv7kma8="
+    },
+    "satelliteResources": null
+  }
+}
