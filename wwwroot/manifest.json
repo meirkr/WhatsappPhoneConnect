@@ -1,7 +1,7 @@
 {
   "name": "WhatsappPhoneConnect",
   "short_name": "WhatsappPhoneConnect",
-  "start_url": "./",
+  "start_url": "./WhatsappPhoneConnect/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#03173d",
