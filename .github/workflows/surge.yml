@@ -1,4 +1,4 @@
-name: DeployToGitHubPages
+name: DeployToSurge
 env:
   PUBLISH_DIR: bin/Release/netstandard2.1/publish/wwwroot
   # Include subfolders if needed
