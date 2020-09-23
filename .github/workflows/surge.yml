@@ -1,0 +1,26 @@
+name: DeployToSurge
+env:
+  PUBLISH_DIR: bin/Release/netstandard2.1/publish/wwwroot
+  # Include subfolders if needed
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Publish app
+      run: dotnet publish -c Release
+      # You can use cd before if your project is in a subfolder
+
+    - name: Deploy to foo-bar.surge.sh
+      uses: dswistowski/surge-sh-action@v1
+      with:
+        domain: 'whatsappconnect.surge.sh'
+        project: ${{ env.PUBLISH_DIR }}
+        login: ${{ secrets.surge_login }}
+        token: ${{ secrets.surge_token }}
