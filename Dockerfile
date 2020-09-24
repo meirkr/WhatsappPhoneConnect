@@ -15,7 +15,7 @@ RUN dotnet publish -c Release -o out
 FROM renderbit/surge as surge
 WORKDIR /surgefiles
 COPY --from=builder /app/out/wwwroot .
-RUN surge --project ./ --domain whatsappphoneconnect.sh
+RUN surge --project ./ --token $surge_token --domain whatsappphoneconnect.sh
 
 FROM nginx:alpine as final
 ## Copy our default nginx config
