@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build :latest
-      run: docker build --build-arg surge_token=${{ secrets.surge_token }} -t ${GITHUB_REPOSITORY}:latest .
+      run: docker build --build-arg surge_token=${{ secrets.surge_token }} -t meirkr/whatsapp_phone_connect:latest .
