@@ -13,14 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Publish app
-      run: docker run --rm -ti -v ./:/src/ mcr.microsoft.com/dotnet/sdk:5.0 dotnet publish -c Release /src/
-      # You can use cd before if your project is in a subfolder
-
-    - name: Deploy to foo-bar.surge.sh
-      uses: dswistowski/surge-sh-action@v1
-      with:
-        domain: 'whatsappconnect.surge.sh'
-        project: ./bin/Release/net5.0/publish
-        login: ${{ secrets.surge_login }}
-        token: ${{ secrets.surge_token }}
+    - name: Build :latest
+      run: docker build --build-arg surge_token=${{ secrets.surge_token }} -t meirkr/whatsapp_phone_connect:latest .
