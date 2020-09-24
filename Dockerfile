@@ -13,7 +13,8 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 FROM renderbit/surge as surge
-ARG surge_token # comes using: --build-arg surge_token=...
+# arg comes using: --build-arg surge_token=...
+ARG surge_token
 WORKDIR /surgefiles
 COPY --from=builder /app/out/wwwroot .
 RUN surge --project ./ --token $surge_token --domain whatsappphoneconnect.sh
