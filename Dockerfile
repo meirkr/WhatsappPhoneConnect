@@ -17,7 +17,7 @@ FROM renderbit/surge as surge
 ARG surge_token
 WORKDIR /surgefiles
 COPY --from=builder /app/out/wwwroot .
-RUN surge --project ./ --token $surge_token --domain whatsappphoneconnect.sh
+RUN surge --project ./ --token $surge_token --domain whatsappphoneconnect.surge.sh
 
 FROM nginx:alpine as final
 ## Copy our default nginx config
