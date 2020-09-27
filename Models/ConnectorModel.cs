@@ -5,6 +5,6 @@ namespace WhatsappPhoneConnect.Models
     public class ConnectorModel
     {
         [Required(AllowEmptyStrings = false, ErrorMessage = "חסר מספר טלפון")] 
-        public int? PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }
