@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+VisualStudioVersion = 16.0.30608.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsappPhoneConnect", "WhatsappPhoneConnect.csproj", "{65EDBC6E-D3ED-46E0-8E16-913DACA6EFAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsappPhoneConnect", "WhatsappPhoneConnect.csproj", "{B2F022BB-46F4-4F2B-8EF3-982EDDA0F72F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65EDBC6E-D3ED-46E0-8E16-913DACA6EFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65EDBC6E-D3ED-46E0-8E16-913DACA6EFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65EDBC6E-D3ED-46E0-8E16-913DACA6EFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65EDBC6E-D3ED-46E0-8E16-913DACA6EFAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F022BB-46F4-4F2B-8EF3-982EDDA0F72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F022BB-46F4-4F2B-8EF3-982EDDA0F72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F022BB-46F4-4F2B-8EF3-982EDDA0F72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F022BB-46F4-4F2B-8EF3-982EDDA0F72F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B63F534E-01F2-42C8-AD93-4A4A40311FE8}
+		SolutionGuid = {7EB3BBC7-F107-4495-9664-FD7CAA5E7AAA}
 	EndGlobalSection
 EndGlobal
