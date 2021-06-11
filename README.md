@@ -5,6 +5,9 @@ Connecting any phone number to your whatsapp
 
 The app is automatically being published using Github Actions :
 https://github.com/meirkr/WhatsappPhoneConnect/actions
+Which only triggers my dockerfile
+https://github.com/meirkr/WhatsappPhoneConnect/blob/master/Dockerfile
+This dockerfile builds the app and publishes it to the surge.sh free static-hosting site.
 
 You can check the published runtime:
-https://whatsappconnect.surge.sh/
+https://whatsappconnect.surge.sh
