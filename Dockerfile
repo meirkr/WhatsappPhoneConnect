@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 as builder
+FROM mcr.microsoft.com/dotnet/sdk:5.0 as builder
 
 WORKDIR /app
 
@@ -12,6 +12,12 @@ COPY . ./
 # Build runtime image
 RUN dotnet publish -c Release -o out
 
+FROM renderbit/surge as surge
+# arg comes using: --build-arg surge_token=...
+ARG surge_token
+WORKDIR /surgefiles
+COPY --from=builder /app/out/wwwroot .
+RUN surge --project ./ --token $surge_token --domain whatsappphoneconnect.surge.sh
 
 FROM nginx:alpine as final
 ## Copy our default nginx config
